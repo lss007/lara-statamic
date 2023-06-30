@@ -2,16 +2,36 @@
 
 
 
-<main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-        {{ collection:news }}
-        <div>
-       <a href="{{ url  }}">  {{ title}}</a> 
-        </div>
-  {{ /collection:news }}
-      </div>
-    </section><!-- End About Section -->
 
-  </main><!-- End #main -->
+
+    <section id="why-us" class="why-us section-bg">
+        <div class="container">
+  
+          <div class="row">
+            {{ collection:news }}
+         
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="card">
+                <img src="assets/img/why-us-3.jpg" class="card-img-top" alt="...">
+                <div class="card-icon">
+                  <i class="bx bx-landscape"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="{{ url  }}">  {{ news_title}}</a>
+                  
+                </h5>
+                  <p class="card-text">
+                    {{article_content}}
+                </p>
+                </div>
+              </div>
+            </div>
+            {{ /collection:news }}
+
+          </div>
+  
+        </div>
+      </section><!-- End Why Us Section -->
+
+  

@@ -9,8 +9,19 @@ tabs:
             field:
               type: text
               required: true
+          -
+            handle: news_title
+            field:
+              type: text
               validate:
                 - required
+              display: 'News Title'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              input_type: text
+              antlers: false
+              hide_display: false
           -
             handle: author
             field:
